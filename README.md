@@ -82,3 +82,131 @@ The codebase is modular and designed for easy extension:
    ```bash
    git clone [https://github.com/YOUR-USERNAME/uav-digital-twin-optimizer.git](https://github.com/YOUR-USERNAME/uav-digital-twin-optimizer.git)
    cd uav-digital-twin-optimizer
+
+## Installation & Setup
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/YOUR-USERNAME/uav-digital-twin-optimizer.git
+cd uav-digital-twin-optimizer
+```
+
+2. **Create a virtual environment (Recommended):**
+
+```bash
+python -m venv venv
+```
+
+Activate the environment:
+
+```bash
+# Linux / macOS
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+
+3. **Install the dependencies:**
+
+```bash
+pip install streamlit numpy pandas plotly
+```
+
+4. **Launch the application:**
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🕹️ Usage Guide
+
+### Configure Parameters
+
+Use the sidebar to:
+
+* Select a **Mission Profile**:
+
+  * Surveillance
+  * Mapping
+  * Delivery
+* Set the **Thrust-to-Weight Ratio (TWR)**
+* Adjust **environmental temperatures**
+
+### Inject Custom Hardware
+
+Define custom:
+
+* Payloads
+
+  * Weight
+  * Power
+  * Utility score
+* Battery chemistries
+
+All hardware parameters can be configured directly from the UI.
+
+### Run Optimization
+
+Click **OPTIMIZE** to trigger the grid-search simulation.
+
+### Analyze Results
+
+* Navigate to the **Optimization** tab to:
+
+  * View the Pareto frontier
+  * Inspect constraint analysis
+
+* Navigate to the **3D Visualization** tab to:
+
+  * Inspect CG stability
+  * Visualize weight distribution
+
+* Export results as:
+
+  * JSON
+  * CSV
+
+via the **Analysis** tab.
+
+---
+
+## 📊 Advanced Analytics
+
+The **Advanced** tab provides deeper operational insights:
+
+### Mission Planning
+
+Translates flight time into:
+
+* Coverage area (`km²`) at specific altitudes
+* Linear inspection distances
+
+### Sensitivity Analysis
+
+Visualizes how non-linear variables impact endurance:
+
+* Temperature drops
+* Payload spikes
+* Battery degradation
+
+### Radar Comparisons
+
+Compare up to three hardware configurations side-by-side across:
+
+* Cost Efficiency
+* Stability
+* Payload Utility
+* Flight Endurance
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for details.
+
