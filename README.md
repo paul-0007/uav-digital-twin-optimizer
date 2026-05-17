@@ -122,7 +122,7 @@ streamlit run app.py
 
 ---
 
-## 🕹️ Usage Guide
+## Usage Guide
 
 ### Configure Parameters
 
@@ -174,7 +174,7 @@ via the **Analysis** tab.
 
 ---
 
-## 📊 Advanced Analytics
+## Advanced Analytics
 
 The **Advanced** tab provides deeper operational insights:
 
@@ -204,7 +204,7 @@ Compare up to three hardware configurations side-by-side across:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**.
 
